@@ -1,6 +1,6 @@
 export default function Item({id,r,g,b,borrarColor}){
     return <li onClick={ () => {
-                fetch("http://localhost:3000/colores/borrar/" + id, {
+                fetch("https://api-colores-mongo-esjk.onrender.com/borrar/" + id, {
                     method : "DELETE"
                 })
                 .then(respuesta => {

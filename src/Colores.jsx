@@ -7,7 +7,7 @@ export default function Colores(){
     let [colores,setColores] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/colores")
+        fetch("https://api-colores-mongo-esjk.onrender.com/colores")
         .then( respuesta => respuesta.json())
         .then( colores => setColores(colores))
     }, [])
